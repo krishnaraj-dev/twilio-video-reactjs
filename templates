@@ -1,0 +1,15 @@
+/*
+* Class Component
+*/
+
+import React, { Component } from 'react';
+
+export class Sample extends Component {
+    render(){
+        return(
+          <>
+          sample text
+          </>
+        )
+    }
+}

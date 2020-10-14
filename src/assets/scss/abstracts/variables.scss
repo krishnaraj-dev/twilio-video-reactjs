@@ -1,0 +1,36 @@
+$white: #fff;
+$black: #000;
+
+$font-OpenSans: "Open Sans", sans-serif !important;
+
+$c1: #0079c0;
+$c2: #b53c8d;
+
+.text-black {
+  color: $black;
+}
+
+/* Color */
+$myColors: (
+  "c1": $c1,
+  "c2": $c2,
+);
+
+@each $name, $colors in $myColors {
+  $index: index($myColors, $colors);
+  .text-#{$name} {
+    color: $colors;
+  }
+  .text-h-#{$name} {
+    color: $colors;
+  }
+  .bg-#{$name} {
+    background-color: $colors;
+  }
+  .bg-h-#{$name} {
+    background-color: $colors;
+  }
+  .bc-#{$name} {
+    border-color: $colors;
+  }
+}
