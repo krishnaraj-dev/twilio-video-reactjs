@@ -19,21 +19,13 @@ class Routes extends Component {
     };
   }
 
-  componentDidMount() {
-  }
+  componentDidMount() { }
 
-  componentWillUnmount() {
-  }
+  componentWillUnmount() { }
 
-  updateWindowDimensions() {
-  }
+  updateWindowDimensions() { }
 
-  componentWillMount() {
-    // path based redirection
-    if (history.location.pathname.toLowerCase() == '/components' || history.location.pathname.toLowerCase() == '/components/') {
-      history.push('/components/example');
-    }
-  }
+  componentWillMount() { }
 
   routerGuard = () => { };
 
