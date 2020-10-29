@@ -37,7 +37,7 @@ const Room = ({ roomName, token, handleLogout }) => {
           track.on('message', function (message) {
             const messages = document.getElementById('message');
             messages.innerHTML = JSON.parse(message)
-            console.log(JSON.parse(message)); // { x: <number>, y: <number> }
+            console.log(JSON.parse(message), 'asdsad'); // { x: <number>, y: <number> }
           });
         });
 
@@ -89,6 +89,7 @@ const Room = ({ roomName, token, handleLogout }) => {
 
       window.addEventListener('beforeunload', () => video.disconnect());
       window.addEventListener('pagehide', () => video.disconnect());
+
     })();
 
     return () => {

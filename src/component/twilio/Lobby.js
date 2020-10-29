@@ -8,7 +8,7 @@ const Lobby = ({
   handleSubmit
 }) => {
   return (
-    <form onSubmit={handleSubmit}>
+    <div className="login-form">
       <h2>Enter a room</h2>
       <div>
         <label htmlFor="name">Name:</label>
@@ -32,8 +32,8 @@ const Lobby = ({
         />
       </div>
 
-      <button type="submit">Submit</button>
-    </form>
+      <button type="button" onClick={handleSubmit}>Submit</button>
+    </div>
   );
 };
 
